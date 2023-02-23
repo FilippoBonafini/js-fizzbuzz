@@ -4,3 +4,34 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-color: coral;
+    font-family: 'Shantell Sans', cursive;
+}
+
+#containerMain h1{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+#containerMain ul{
+    margin: auto;
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#containerMain li{
+    list-style: none;
+    background-color: rgb(255, 255, 255);
+    width: 75px;
+    height:75px ;
+    text-align: center;
+    line-height: 75px;
+    border-radius: 15px;
+}
+
