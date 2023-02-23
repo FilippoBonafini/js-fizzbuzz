@@ -33,5 +33,20 @@ body{
     text-align: center;
     line-height: 75px;
     border-radius: 15px;
+    font-size: 30px;
 }
 
+#containerMain .classFizz{
+    font-size: 16px;
+    background-color: rgb(27, 202, 202);
+}
+
+#containerMain .classBuzz{
+    font-size: 16px;
+    background-color: rgb(144, 141, 231);
+}
+
+#containerMain .classFizzBuzz{
+    font-size: 16px;
+    background-color: rgb(178, 112, 184);
+}
