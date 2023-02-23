@@ -4,8 +4,9 @@ const ul = document.querySelector('ul.list');
 
 // VARIABILE FINESTRA A SCOMPARSA
 const displayInfo = document.querySelector('.info');
-const randomNumberButton = document.querySelector('button.randomNumber')
-
+const displayBackground = document.getElementById('screen');
+const randomNumberButton = document.querySelector('button.randomNumber');
+const resetNumberButton = document.querySelector('.resetNumber');
 // VARIABILE BOTTONE CHIUDI FINESTRA
 const buttonClose = document.querySelector('.info .close');
 
@@ -46,6 +47,7 @@ for (let i=1; i<101; i++) {
 buttonClose.addEventListener("click",
     function(){
         displayInfo.classList.add('hidden');
+        displayBackground.classList.add('hidden');
     }
 )
 
@@ -62,6 +64,13 @@ randomNumberButton.addEventListener('click',
 
         // FACCIO COMPARIRE LA FINESTRELLA
         displayInfo.classList.remove('hidden');
+        displayBackground.classList.remove('hidden');
+    }
+)
 
+resetNumberButton.addEventListener('click',
+    function(){
+        const resetSelection = document.querySelector('.selected');
+        resetSelection.classList.remove('selected');
     }
 )
