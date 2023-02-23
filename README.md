@@ -28,3 +28,7 @@ Utilizziamo questo ordine per dare priorità al FizzBuzz in quanto tutti i numer
 ---
 ## Bonus
 1. Crea un container nel DOM , aggiungendo (attraverso la funzione append()) un elemento html con il numero o la stringa corretta da mostrare.
+
+2. Creazione grafica accattivante
+
+3. applicazione di classi specifiche nel caso di FizzBuzz, Buzz o Fizz
