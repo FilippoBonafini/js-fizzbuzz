@@ -1,4 +1,16 @@
+// VARIABILI PER SCRIVERE I NUMERI 
 const ul = document.querySelector('ul.list');
+
+
+// VARIABILE FINESTRA A SCOMPARSA
+const displayInfo = document.querySelector('.info');
+const randomNumberButton = document.querySelector('button.randomNumber')
+
+// VARIABILE BOTTONE CHIUDI FINESTRA
+const buttonClose = document.querySelector('.info .close');
+
+// VARIABILE DOM SPAN
+const DOMnumberSelected = document.querySelector('.info .numberSelected');
 
 for (let i=1; i<101; i++) {
     const elementoLista = document.createElement('li');
@@ -30,3 +42,26 @@ for (let i=1; i<101; i++) {
         ul.append(elementoLista);
     }
 }   
+
+buttonClose.addEventListener("click",
+    function(){
+        displayInfo.classList.add('hidden');
+    }
+)
+
+randomNumberButton.addEventListener('click',
+    function(){
+        // MI CREO 1 NUMERO RANDOM DA 1 A 100
+        const numberRandom = Math.floor(Math.random()*100);
+        // CREO UNA STRINGA UGUALE ALLA CLASSE DEI NUMERI
+        const numberSearch = 'class'+numberRandom;
+        // IMPORTO LA CLASSE DEL NUMERO
+        const numberClass = document.querySelector('.'+numberSearch);
+        numberClass.classList.add('selected');
+        DOMnumberSelected.innerHTML=("E' stato estratto il numero: "+numberRandom );
+
+        // FACCIO COMPARIRE LA FINESTRELLA
+        displayInfo.classList.remove('hidden');
+
+    }
+)

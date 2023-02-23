@@ -50,3 +50,61 @@ body{
     font-size: 16px;
     background-color: rgb(178, 112, 184);
 }
+
+#containerMain .randomNumber{
+    width: 80px;
+    height: 80px;
+    font-size: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 200px;
+    right: 100px;
+}
+
+#containerMain .info{
+    background-color: rgba(230, 230, 230, 0.975);
+    height: 200px;
+    width: 600px;
+    position: absolute;
+    top: 200px;
+    right: calc(50vw - 300px);
+    border-radius: 30px;
+}
+
+#containerMain .hidden{
+    display: none;
+}
+
+#containerMain .info button{
+    display:block;
+    font-size: 50px;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#containerMain .info .numberSelected{
+    display: inline-block;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 40px;
+    
+}
+
+#containerMain .info .numberSelectedType{
+    display: block;
+    font-size: 30px;
+    margin-left: 40px;
+    
+}
+
+#containerMain .selected{
+    -webkit-box-shadow: 0px 0px 17px 1px rgba(255,248,36,0.73); 
+    box-shadow: 0px 0px 17px 1px rgba(255,248,36,0.73);
+}
+
