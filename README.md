@@ -24,6 +24,7 @@ Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda ch
     inseve se i diviso 3 da resto 0 deve scrivere Fizz;
     invece se i diviso 5 da resto 0 deve scrivere Buzz;
     altrimenti scrive i;
-Utilizziamo questo ordine per dare priorità al FizzBuzz in quanto tutti i numeri che soddisfano la prima condizione soddisferanno anche le successive.
+Utilizziamo questo ordine per dare priorità al FizzBuzz in quanto tutti i numeri che soddisfano la prima condizione soddisferanno anche le successive ma vogliamo farli eseguire come fizzBuzz
 ---
 ## Bonus
+1. Crea un container nel DOM , aggiungendo (attraverso la funzione append()) un elemento html con il numero o la stringa corretta da mostrare.
